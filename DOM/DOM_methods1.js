@@ -1,0 +1,1 @@
+document.getElementById('xxx').style.border='3px red solid';

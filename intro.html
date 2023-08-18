@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>JavaScript Introduction</h1>
+	<script type="text/javascript">
+		var a=10;
+		var b=20;
+		var c=30;
+		alert(a);
+		console.log(b);
+		document.write(c);
+
+		//we have to write content inside double quotes when we want to execute content.
+		//we use <br> to execute in next line.
+		document.write("Welcome to JavaScript <br>"); 
+		document.write("The value of a is ",a);
+		var name='yamini';
+		document.write("<br>",name);
+
+
+		//to concatenate two names or variables
+		name+=' sariki';
+		document.write("<br>",name);
+		document.write("<br>",name.length);
+
+		//task
+		var frd='arjun';
+		frd+=' varma';
+		frd+=',Ayesh';
+		document.write("<br><br>",frd);
+
+		//to know the variable type -->typeof(variable)
+		//here fraction also considered as number
+		//when we won't assign any value for variable then it executes undefined for --> document.write(typeof(variable)); or document.write(variable);
+		var x=12.4;
+		document.write("<br>",typeof(x));
+
+		//if we assign any values like true or false then output for -->typeof(variable) will be boolean
+		var y=true;
+		document.write(typeof(y));
+
+		//array will be considered as object in javascript and array will consists of different type of variables in javascript
+		var arr=['mini',1,true];
+		document.write("<br>",arr);
+		document.write("<br>",typeof(arr));
+
+		//indexes of array start from 0
+		var arr=['mini','satya','sindhu','swap'];
+		document.write("<br>",arr[1]," ",arr[3]);
+
+		//object
+		var obj={
+			'Name':'Arjun',
+			'rollnumber':'143', //we should not use spaces in variable name like --> roll num
+			'branch':'cse'
+		}
+		console.log(obj.Name); //or console.log(obj['name']);
+		console.log(obj);//to get all values of array
+		document.write(obj); //it won't execute
+
+		//multiple values with -->then we have to represent like [{...},{...}]
+		var trainees=[
+		{
+			'student':'Arjuuu',
+			'number':123,
+			'email':'arjun03@gmail.com'
+		} ,{
+			'student':'vishnu',
+			'number':134,
+			'email':'vishnu@gmail.com'
+		} ,{
+			'student':'sam',
+			'number':111,
+			'email':'sam@gmail.com'
+		} , {
+			'student':'harsh',
+			'numner':444,
+			'email':'harsh@gmail.com'
+		}]
+		/*console.log(trainees); */
+		// console.log(trainees[0].name);
+		// console.log(trainees[1].name);
+
+		//for loop (using for loop we have to execute all array elements)
+		/*for(let i=0;i<trainees.length;i++)
+		{
+			console.log(trainees[i].student,trainees[i].number);
+			
+		}*/
+		for(let i=0;i<trainees.length;i++)
+		{
+			document.write("<br>")
+			for(let val in trainees[i])
+			{
+				document.write(trainees[i][val]," ")
+			}
+		}
+	</script>
+</body>
+<!--<script type="text/javascript" src="intro.js"></script>--> <!--we can write script tag anywhere-->
+</html>

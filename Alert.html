@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alert / Confirmation Box / Prompt Box</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 1. window alert
+
+		// alert("Success.");
+
+
+		// 2.confirmation box --> if you click ok when it executed in browser , then it returns true .if not it show false.
+	/*	var a = confirm("Are you sure to delete records?");
+		document.write(a);  */
+
+		// 3.prompt box
+
+		//var b = prompt("Enter the value:"); 
+
+		//if you want to consider the value as an integer then we have to write --> parseInt(value)
+
+		//document.write(parseInt(b));    //it will retrun whatever the value or message you enter in prompt box.even if you enter 10+20 , it will return 10+20
+
+		//document.write(eval(b)); //if you want perform any operation like (+,-,*,/) then it will return answer. ex: eval(b)-->b=10+20--> output:30
+
+		//task
+		var x = prompt("Enter first value:");
+		var y = prompt("Enter second value:");
+		document.write(parseInt(x)+parseInt(y));
+		
+	</script>
+</body>
+</html>

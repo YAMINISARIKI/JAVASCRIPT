@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Function</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//syntax:
+		//functionkeyword funtionname(arg1,arg2,arg3.....argn) //we can write any name for function name
+		// {
+		// 		statement
+		// 		return statement
+		// }
+		//normal function with no parameters
+//-----------------------------------------Function without arguments--------------
+
+		// function test(){
+		// 	alert("testing");
+		// 	//document.write("JS function")
+		// }
+		// test() //calling the function
+
+//-----------------------------------------Function with 1 argument--------------
+
+		//function with one parameter
+
+		// function getname(name){
+		// 		console.log(name)
+		// 		//document.write(name)
+		// }
+		// getname('Arjun')
+
+//---------------------------
+		//function for id scanner
+
+		// var a = prompt("Scan your id here");
+		// function scan(rollno)
+		// {
+		// 	document.write(rollno);
+		// }
+		// scan(a);
+
+		//------------------------------------function with 2 arguments-----------------------
+
+		// var a = parseInt(prompt("first"));
+		// var b = parseInt(prompt("second"));
+		// function addition(x,y)
+		// {
+		// 	document.write(eval(x+y))
+		// }
+		// addition(a,b); //if we don't enter required arguments then output will be 'NaN'(Note a number) ex:if we enter only a value instead of entering a and b value then it will return 'NaN'
+
+//-----------------------------------------Anonymous Function-------------------------
+
+		//anonymous function is a function without having function name
+
+		// var x = function(a,b){
+		// 	return a*b;
+		// }
+		// document.write(x(2,5));
+		
+//------------------------------Arrow Function--------------------------
+
+		//es6 arrow function   notation: '=>' | in this we don't use keyword(function) ex: functionname=(var1,var2)=>{ }
+
+		//single argument
+
+		// getname = (a)=>{
+		// 	document.write(a)
+		// }
+		// getname('Arjun');
+
+	//-------------------
+		//two arguments
+
+		// add = (a,b)=>{
+		// 	document.write(a+b)
+		// }
+		// add(4,5);
+
+	//arrow function with no arguments 
+		//we can also use '_' instead of '()' when we don't want to give any arguments
+
+		// test = _ =>{
+		// 	document.write("testing")
+		// }
+		// test()
+//-------------------------------------setTimeout function------------
+
+		//setTimeout function : this is used when we want to display output after some particular time. and here,1sec = 1000
+
+		/* setTimeout(function(){
+		 		document.write("enables after 3 secs")
+		 },2000) */
+
+
+		//setTimeout funtion using callback concept
+		//callback is a function within the function as an argument
+
+		setTimeout(test1,2000)
+		function test1(){
+				document.write("Enables in 2 secs")
+		}
+
+
+
+	</script>
+</body>
+</html>

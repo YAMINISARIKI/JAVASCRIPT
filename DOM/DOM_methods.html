@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM methods</title>
+</head>
+<body>
+	<h1 id="x">Heyloooooo</h1>
+	<h2 id="xxx">Good Morning</h2>
+	<script type="text/javascript">
+		let msg1 = document.getElementById('x').style.color="blue";  //to change the content in certain tag.
+		msg1.innerHTML = '<p> Hiiii </p>';  //here , .innerHTML is a keyword and innerHTMl won't return if there are any tags included inside the content .
+
+		let msg2 = document.getElementById('xxx').style.fontsize="25px";  //to change the content in certain tag.
+		msg2.innerText = '<p> Good Night </p>'; //.innerText is a keyword and it will return the content as as plain content even any tags  included  iwithin the content
+	</script>
+</body>
+</html>

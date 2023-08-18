@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tables</title>
+</head>
+<body>
+	<table border="1" cellpadding="2">
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		/*let a = document.getElementsByTagName('td');
+		for (var i = 0; i < a.length; i++) {
+			a[i].innerText = i+1;
+		}*/
+
+
+		//to modify the given table in reverse order using for loop
+		let a = document.getElementsByTagName('td');
+		for (var i = 0; i < a.length; i++) {
+			a[i].innerText=a.length-i;
+		}
+	</script>
+</body>
+</html>
